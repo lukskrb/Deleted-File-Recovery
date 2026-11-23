@@ -1,15 +1,13 @@
-from scanner import scan
+from scanner import scan_file
 
 def main():
     file_path = input("Enter path to the file: ")
 
     try:
-        with open(file_path, 'rb') as file:
-            data = file.read()
+        signatures = scan_file(file_path, chunk_size=16)
 
-        signatures = scan(data)
         for signature, offsets in signatures.items():
-            print("Signature -" + signature + "- found at positions: " + str(offsets))
+            print(f"Signature -{signature}- found at positions: {str(offsets)}")
 
     except FileNotFoundError:
         print("File not found")
