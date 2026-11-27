@@ -1,0 +1,19 @@
+{
+    "files": [
+        {
+            "filename": "test.jpg",
+            "size": 36013,
+            "sha256": "84188b58bd81f5d71215282a399d2a70c74fee76ab393e50a372c96aac93e2b1"
+        },
+        {
+            "filename": "test.pdf",
+            "size": 940424,
+            "sha256": "0e1caaeff6b9ff0d9831da23c35e44362ddb3096d56cbcf251c08b7f91d6e46f"
+        },
+        {
+            "filename": "test.png",
+            "size": 240541,
+            "sha256": "3f62aa6a959f84c315b06662402507954c66042a50152a25af5c0a501df2de03"
+        }
+    ]
+}

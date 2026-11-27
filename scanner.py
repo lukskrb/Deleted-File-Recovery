@@ -25,7 +25,7 @@ def scan(data):
 
 def scan_file(file_path, chunk_size=4096):
     if type(chunk_size) != int or chunk_size <= 0:
-        raise ValueError("Chunk size must be positive and not 0")
+        raise ValueError("Chunk size must be a positive integer")
 
     already_checked = 0
     overlap_size = max(len(sig) for sig in FILE_SIGNATURES.values()) - 1
